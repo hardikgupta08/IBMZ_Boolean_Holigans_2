@@ -1,4 +1,4 @@
-# Boolean_Holigans_2
+# Boolean_Hooligans_2
 # FooodLink : Share Food, Reduce Waste, And Fight Hunger
 
 ## Abstract:
