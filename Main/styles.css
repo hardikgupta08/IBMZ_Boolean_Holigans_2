@@ -1,0 +1,273 @@
+
+body {
+  background-color: hsl(200, 6%, 10%);
+  color: black;
+  overflow: hidden;
+}
+.mainDiv{
+  margin-top: 23vh;
+}
+
+#menu[data-active-index="0"]>#menu-background-pattern {
+  background-position: 0% -25%;
+}
+
+#menu[data-active-index="1"]>#menu-background-pattern {
+  background-position: 0% -50%;
+}
+
+#menu[data-active-index="2"]>#menu-background-pattern {
+  background-position: 0% -75%;
+}
+
+#menu[data-active-index="3"]>#menu-background-pattern {
+  background-position: 0% -100%;
+}
+
+#menu[data-active-index="0"]>#menu-background-image {
+  background-position: center 45%;
+}
+
+#menu[data-active-index="1"]>#menu-background-image {
+  background-position: center 50%;
+}
+
+#menu[data-active-index="2"]>#menu-background-image {
+  background-position: center 55%;
+}
+
+#menu[data-active-index="3"]>#menu-background-image {
+  background-position: center 60%;
+}
+
+#menu-background-pattern {
+  background-image: radial-gradient( lightgray,9%,
+          transparent 9%);
+  background-position: 0% 0%;
+  background-size: 12vmin 12vmin;
+  height: 100vh;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  transition: opacity 800ms ease,
+      background-size 800ms ease,
+      background-position 800ms ease;
+  width: 100vw;
+  z-index: -70;
+}
+
+#containerEx{
+  position: absolute;
+  width: 20vw;
+  height: 39vh;
+  background-color: white;
+
+  top: -40;
+  left: 52.8%;
+  z-index: -2;
+}
+
+.container-main {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 20%;
+  z-index: 10;
+
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  width: 150%;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 60%;
+}
+
+.row .card {
+  box-shadow: 3px 4px wheat;
+  border: 5px wheat solid;
+  background-color: white;
+  margin-right: 1%;
+  margin-left: 1%;
+  width: 300px;
+  border-radius: 2%;
+  height: 400px;
+}
+
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+
+
+
+a {
+  text-decoration:none;
+  color:#1ab188;
+  transition:.5s ease;
+  &:hover {
+    color: #181a1b;
+  }
+}
+
+.form {
+  background-color: #c1bdba;
+  padding: 40px;
+  max-width:600px;
+  margin:40px auto;
+  border-radius: 4px;
+  box-shadow:0 4px 10px 4px rgba(#13232f,.3);
+  outline: 2px black solid;
+}
+
+.tab-group {
+  list-style:none;
+  padding:0;
+  margin:0 0 40px 0;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  li a {
+    display:block;
+    text-decoration:none;
+    padding:15px;
+    background:rgba(lightgray,.25);
+    color:lightgray;
+    font-size:20px;
+    float:left;
+    width:50%;
+    text-align:center;
+    cursor:pointer;
+    transition:.5s ease;
+  }
+  .active a {
+    background:#1ab188;
+    color:#ffffff;
+  }
+}
+
+.tab-content > div:last-child {
+  display:none;
+}
+
+
+h1 {
+  text-align:center;
+  color:black;
+  font-weight:300;
+  margin:0 0 40px;
+}
+
+label {
+  position:absolute;
+  transform:translateY(6px);
+  left:13px;
+  color:rgba(#ffffff,.5);
+  transition:all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size:22px;
+  .req {
+  	margin:2px;
+  	color:#1ab188;
+  }
+}
+
+label.active {
+  transform:translateY(50px);
+  left:2px;
+  font-size:14px;
+  .req {
+    opacity:0;
+  }
+}
+
+label.highlight {
+	color:#ffffff;
+}
+
+input, textarea {
+  font-size:22px;
+  display:block;
+  width:100%;
+  height:100%;
+  padding:5px 10px;
+  background:none;
+  background-image:none;
+  border:1px solid lightgray;
+  color:#ffffff;
+  border-radius:0;
+  transition:border-color .25s ease, box-shadow .25s ease;
+  &:focus {
+		outline:0;
+		border-color:#1ab188;
+  }
+}
+
+textarea {
+  border:2px solid lightgray;
+  resize: vertical;
+}
+
+.field-wrap {
+  position:relative;
+  margin-bottom:40px;
+}
+
+.top-row {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  > div {
+    float:left;
+    width:48%;
+    margin-right:4%;
+    &:last-child { 
+      margin:0;
+    }
+  }
+}
+
+.button {
+  border:0;
+  outline:none;
+  border-radius:0;
+  padding:15px 0;
+  font-size:2rem;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  background:#1ab188;
+  color:#ffffff;
+  transition:all.5s ease;
+}
+
+.button-block {
+  display:block;
+  width:100%;
+}
+
+.forgot {
+  margin-top:-20px;
+  text-align:right;
+}
+
+#menu{
+  background-color: wheat;
+  height: 800px;
+  outline: 1px black solid;
+  width: 300px;
+  position: absolute;
+}

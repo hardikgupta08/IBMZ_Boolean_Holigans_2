@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodLink</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="stylesheet" href="Home/styles.css" />
+  <link rel="stylesheet" href="Home/ytheader.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="Home/map.css">
+</head>
+
+<body>
+  <nav class="navbarMain">
+    <div class="navbar__center">
+      <img src="Home/img/decorderLogo.png" alt="youtube" class="navbar__c__logo">
+    </div>
+  </nav>
+
+  <div id="menu">
+    <div id="menu-items">
+      <div class="menu-item">
+        <a style="color: green; text-decoration: none" href="Main/index.html">Surplus Food Form
+        </a>
+      </div>
+      <div class="menu-item">
+        <a style="color: #ffffff; text-decoration: none" href="https://www.un.org/en/global-issues/food">UN Food Issues
+        </a>
+      </div>
+      <div class="menu-item">
+        <a style="color: #ffffff; text-decoration: none" href="https://chat.whatsapp.com/EPbyqOkgQvEAw7esweYbF7">Contact us
+        </a>
+      </div>
+      <div class="menu-item">
+        <a style="color: #ffffff; text-decoration: none" href="carousel/index.html"> Technology Stack</a>
+      </div>
+    </div>
+    <div id="menu-background-pattern"></div>
+    <div id="menu-background-image"></div>
+  </div>
+
+  <div class="rightCard">
+    <div class="selectPlace">
+      <input type="text" placeholder="Enter Your Location" class="boo" id="pac-input">
+      <label for="cars">Choose a car:</label>
+<select name="radius" id="radius" class="booo">
+  <option value="10000">10Km</option>
+  <option value="20000">20Km</option>
+  <option value="30000">30Km</option>
+  <option value="40000">40Km</option>
+  <option value="50000">50Km</option>
+</select>
+      <!-- <input type="button" name="Submit" id="" value="Submit" class="booo"> -->
+    </div>
+    <div class="container" id="map">
+     
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src=""></script>
+  <script src="Home/code.jquery.com_jquery-3.7.1.min.js"></script>
+  <script src="Home/js.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="Home/script2.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script src="Home/map.js"></script>
+  <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAdIMEZbhThfILd9V5hqADXCEee1vxJfdc&callback=initMap&libraries=places&v=weekly'></script>
+</body>
+
+</html>
