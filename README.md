@@ -6,7 +6,7 @@
 
 # Team Members:
 #### 1. Manya ()
-#### 2. Harshita Maheshwari ()
+#### 2. Harshita Maheshwari (https://github.com/harshitamahe)
 #### 3. Lakshay Arora (https://github.com/lakshay7216)
 #### 4. Shivam Goyal (https://github.com/Keshav365)
 #### 5. Priyanshu .(https://github.com/Priyanshu792)
